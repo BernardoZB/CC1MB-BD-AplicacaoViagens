@@ -2,19 +2,19 @@
 
 <h3>Um banco de dados para uma aplicação voltada para venda de pacotes de viagens</h3>
 
-<p>Cliente: Agência de Viagens
+<p>Cliente: Agência de Viagens</p>
 
 
 
-Objetivo de Sistema: Compra de Pacotes de Viagem
+<p>Objetivo de Sistema: Compra de Pacotes de Viagem</p>
 
 
 
-O que eu sei:
+<p>O que eu sei:</p>
 
-	O cliente pode comprar passagens e reservar locais de hospedagem
+	<p>O cliente pode comprar passagens e reservar locais de hospedagem</p>
 
-	Os locais de hospedagem podem ser hotéis, resorts e pousadas</p>
+	<p>Os locais de hospedagem podem ser hotéis, resorts e pousadas</p>
 
 
 <p>Alunos : Henrique Kalil, Daniel Colodete, Alan de Almeida, Bernardo Zampirole </P>
