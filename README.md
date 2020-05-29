@@ -12,9 +12,9 @@
 
 <p>O que eu sei:</p>
 
-	<p>O cliente pode comprar passagens e reservar locais de hospedagem</p>
+	O cliente pode comprar passagens e reservar locais de hospedagem
 
-	<p>Os locais de hospedagem podem ser hotéis, resorts e pousadas</p>
+	Os locais de hospedagem podem ser hotéis, resorts e pousadas
 
 
 <p>Alunos : Henrique Kalil, Daniel Colodete, Alan de Almeida, Bernardo Zampirole </P>
