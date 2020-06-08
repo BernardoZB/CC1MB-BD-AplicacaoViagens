@@ -1,0 +1,37 @@
+Entidades:
+Usuário
+Pacote
+Hospedagem(Hotel, Resort, Pousada)
+Passagem
+Atributos das entidades:
+Usuário: Nome(obrigatório), CPF(obrigatório e único), Endereço (obrigatório).
+Pacote: ID (obrigatório), Data(obrigatório), Preço (obrigatório).
+Hospedagem: Endereço (obrigatório e unico), Estilo (obrigatório), Reserva(obrigatório e único).
+Passagem: Preço (obrigatório), Destino (obrigatório), Reserva(obrigatório e único).
+
+Atributos unicos: ID, CPF e Reserva, Endereço
+
+O usuário pode comprar várias passagens, mas uma passagem pode nunca ter sido comprada
+O usuário pode comprar pelo menos uma hospedagem, mas a hospedagem pode não ter sido comprada
+O usuário pode comprar pelo menos um pacote, mas o pacote pode nunca ter sido vendido
+
+Usuário --->Passagem
+Usuário --->Hospedagem
+Usuário --->Pacote
+
+As chaves utilizadas foram : Reserva, CPF, ID, Endereço
+
+Não foram necessárias chaves compostas
+
+Nome - VARCHAR2
+Cpf - NUMBER
+Endereço - VARCHAR2
+Preço - NUMBER
+Destino - VARCHAR2
+Estilo - VARCHAR2
+Reserva - VARCHAR2
+ID - NUMBER
+Data - DATE
+
+
+OBS: Como é a primeira vez utilizando essa plataforma, sem querer coloqueis todos os arquivos em issues peço perdão enviarei todos corretamente agr
