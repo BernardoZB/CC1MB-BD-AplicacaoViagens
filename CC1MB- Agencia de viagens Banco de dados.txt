@@ -1,0 +1,771 @@
+REM   Script: Banco de Dados
+REM   Projeto integrado Banco de Dados
+
+REM   Script: GREWYQQ
+
+
+REM   EARHGERQY
+
+
+INSERT into Passagem values ('300', 'RJ', '1112000354', '111.111.111-11');
+
+INSERT into passagem values ('300', 'RJ', '1112000354', '111.111.111-11');
+
+INSERT into PASSAGEM values ('300', 'RJ', '1112000354', '111.111.111-11');
+
+INSERT into PASSAGEM VALUES ('300', 'RJ', '1112000354', '111.111.111-11');
+
+INSERT into PASSAGEM VALUES ('300', 'RJ', '1112000354', '111.111.111-11',);
+
+INSERT into PASSAGEM VALUES ('300', 'RJ', '1112000354', '111.111.111-11'),;
+
+INSERT into PASSAGEM VALUES ('300', 'RJ', '1112000354', '111.111.111-11');
+
+REM   Script: UBAGUBA
+
+
+REM   KKKKKKKKKKKKKKKKKKKKKKKKKK
+
+
+REM   Script: Session 01
+
+
+REM   aaaaaa
+
+
+CREATE TABLE Pacote(  
+  
+preço number(6) NOT NULL,  
+  
+Data date NOT NULL,  
+  
+ID number(10) PRIMARY KEY  
+);
+
+CREATE TABLE Hospedagem(  
+  
+tipo varchar2(10) NOT NULL,  
+  
+reserva varchar2(10) NOT NULL,  
+  
+hopedagem varchar2(32) PRIMARY KEY 
+) ;
+
+ CREATE TABLE Usuario(  
+  
+nome varchar2(32) NOT NULL,  
+  
+endereço varchar2(32) NOT NULL,  
+  
+cpf varchar2(15) PRIMARY KEY 
+) ;
+
+CREATE TABLE Passagem(  
+  
+preço number (6) NOT NULL,  
+  
+destino varchar2 (32) NOT NULL,  
+  
+reserva varchar2 (10) PRIMARY KEY 
+) ;
+
+ALTER TABLE Hospedagem   add constraint fk_usuario_hospedagem   foreign key(cpf_usuario);
+
+ALTER TABLE Hospedagem   add constraint fk_usuario_hospedagem   foreign key(cpf_usuario);
+
+alter table Hospedagem   add constraint fk_usuario_hospedagem   foreign key(cpf_usuario) ;
+
+alter table Hospedagem   add constraint fk_usuario_hospedagem   foreign key(cpf_usuario);
+
+alter table Hospedagem   add constraint fk_usuario_hospedagem   foreign key(cpf_usuario);
+
+drop table hospedagem ;
+
+drop table pacote ;
+
+drop table passagem ;
+
+CREATE TABLE Pacote(  
+  
+preço number(6) NOT NULL,  
+  
+Data date NOT NULL,  
+  
+ID number(10) PRIMARY KEY  
+ 
+cpf_usuario varchar2(15) 
+ 
+foreign key (cpf_usuario) references usuario(cpf) 
+);
+
+CREATE TABLE Pacote(  
+  
+preço number(6) NOT NULL,  
+  
+Data date NOT NULL,  
+  
+ID number(10) PRIMARY KEY, 
+ 
+cpf_usuario varchar2(15), 
+ 
+foreign key (cpf_usuario) references usuario(cpf) 
+);
+
+CREATE TABLE Hospedagem(  
+  
+tipo varchar2(10) NOT NULL,  
+  
+reserva varchar2(10) NOT NULL,  
+  
+hopedagem varchar2(32) PRIMARY KEY,  
+ 
+foreign key (cpf_usuario) references usuario(cpf) 
+);
+
+CREATE TABLE Hospedagem(  
+  
+tipo varchar2(10) NOT NULL,  
+  
+reserva varchar2(10) NOT NULL,  
+  
+hopedagem varchar2(32) PRIMARY KEY,  
+ 
+cpf_usuario varchar2(15), 
+ 
+foreign key (cpf_usuario) references usuario(cpf) 
+) ;
+
+CREATE TABLE Hospedagem(  
+  
+tipo varchar2(10) NOT NULL,  
+  
+reserva varchar2(10) NOT NULL,  
+  
+hopedagem varchar2(32) PRIMARY KEY,  
+ 
+cpf_usuario varchar2(15), 
+ 
+foreign key (cpf_usuario) references usuario(cpf) 
+)  
+ 
+CREATE TABLE Passagem(  
+  
+preço number (6) NOT NULL,  
+  
+destino varchar2 (32) NOT NULL,  
+  
+reserva varchar2 (10) PRIMARY KEY 
+ 
+)  ;
+
+CREATE TABLE Passagem(  
+  
+preço number (6) NOT NULL,  
+  
+destino varchar2 (32) NOT NULL,  
+  
+reserva varchar2 (10) PRIMARY KEY, 
+ 
+cpf_usuario varchar2(15), 
+ 
+foreign key (cpf_usuario) references usuario(cpf) 
+) ;
+
+INSERT INTO usuario VALUES ('Danyel','RJ - R.TV Rodes N.72 ' ,324.236.243-23) 
+INSERT INTO usuario VALUES ('Henrique','RJ - R. Washington Luís, 40 - Centro ' ,334.352.283-23);
+
+INSERT INTO usuario VALUES ('Danyel','RJ - R.TV Rodes N.72 ' ,324.236.243-23);
+
+INSERT INTO usuario VALUES ('Henrique','RJ - R. Washington Luís, 40 - Centro ' ,334.352.283-23);
+
+INSERT INTO usuario VALUES ('Danyel','RJ - R.TV Rodes N.72 ' ,324.236.243-23);
+
+INSERT INTO usuario VALUES ('Henrique','RJ - R. Washington Luís, 40 - Centro ' ,334.352.283-23);
+
+INSERT INTO usuario VALUES ('Danyel','RJ - R.TV Rodes N.72 ' ,324.236.243-23);
+
+INSERT INTO usuario VALUES ('Henrique','RJ - R. Washington Luís, 40 - Centro ' ,334.352.283-23);
+
+INSERT INTO usuario VALUES ('Danyel','RJ - R.TV Rodes N.72 ' ,324.236.243-23);
+
+INSERT INTO usuario VALUES ('Danyel','RJ - R.TV Rodes N.72 ' , 324.236.243-23);
+
+INSERT INTO usuario VALUES ('Henrique','RJ - R. Washington Luís, 40 - Centro ' , 334.352.283-23);
+
+INSERT INTO usuario VALUES ('Danyel','RJ - R.TV Rodes N.72 '         , 324.236.243-23);
+
+INSERT INTO usuario VALUES ('Henrique','RJ - R. Washington Luís, 40 - Centro'       , 334.352.283-23);
+
+INSERT INTO usuario VALUES ('Danyel','RJ - R.TV Rodes N.72 '         , 324.236.243-23), 
+INSERT INTO usuario VALUES ('Henrique','RJ - R. Washington Luís, 40 - Centro'       , 334.352.283-23);
+
+INSERT INTO usuario VALUES ('Danyel','RJ - R.TV Rodes N.72 '         , 324.236.243-23,), 
+INSERT INTO usuario VALUES ('Henrique','RJ - R. Washington Luís, 40 - Centro'       , 334.352.283-23);
+
+INSERT INTO usuario VALUES ('Danyel','RJ - R.TV Rodes N.72 '         , 324.236.243-23,);
+
+INSERT INTO usuario VALUES ('Henrique','RJ - R. Washington Luís, 40 - Centro'       , 334.352.283-23,);
+
+INSERT INTO usuario VALUES ('Danyel' , 'RJ - R.TV Rodes N.72 '         , 324.236.243-23,);
+
+INSERT INTO usuario VALUES ('Danyel' , 'RJ - R.TV Rodes N.72 '         , 324.236.243-23,);
+
+INSERT INTO usuario VALUES ('Danyel' , 'RJ - R.TV Rodes N.72 '         , 324.236.243-23,),;
+
+INSERT INTO usuario VALUES ('Danyel' , 'RJ - R.TV Rodes N.72 '         , 324.236.243-23),;
+
+INSERT INTO usuario VALUES ('Danyel' , 'RJ - R.TV Rodes N.72 '         , 324.236.243-23),;
+
+INSERT INTO usuario VALUES ('Danyel' , 'RJ - R.TV Rodes N.72 '         , 324.236.243-23);
+
+INSERT INTO usuario VALUES ('Danyel' , 'RJ - R.TV Rodes N.72 ' , 324.236.243-23);
+
+INSERT INTO usuario VALUES ('Danyel' , 'RJ - R.TV Rodes N.72 ' , '324.236.243-23');
+
+INSERT INTO usuario VALUES ('Henrique' , 'RJ - R. Washington Luís, 40 - Centro', '334.352.283-23',);
+
+INSERT INTO usuario VALUES ('Felipe' , 'RJ - R. Washington Luís, 1 - Centro'       , 111.111.111-11,);
+
+INSERT INTO usuario VALUES ('Henrique' , 'RJ - R. Washington Luís, 40 - Centro', '334.352.283-23',);
+
+INSERT INTO usuario VALUES ('Felipe' , 'RJ - R. Washington Luís, 1 - Centro'       , '111.111.111-11',);
+
+INSERT INTO usuario VALUES ('Henrique' , 'RJ - R. Washington Luís, 40 - Centro', '334.352.283-23',);
+
+INSERT INTO usuario VALUES ('Felipe' , 'RJ - R. Washington Luís, 1 - Centro'       , '111.111.111-11');
+
+INSERT INTO usuario VALUES ('Henrique' , 'RJ - R.Washington Luís, 40 -Centro', '334.352.283-23',);
+
+INSERT INTO usuario VALUES ('Felipe' , 'RJ - R.Washington Luís, 1 -Centro' , '111.111.111-11');
+
+INSERT INTO usuario VALUES ('Felipe' , 'RJ - R. Equador, 1 - Centro' , '111.111.111-11');
+
+INSERT INTO USUARIO VALUES ('Henrique' , 'RJ - R. Equador, 40 - Centro', '334.352.283-23',);
+
+INSERT INTO USUARIO VALUES ('Felipe' , 'RJ - R. Equador, 1 - Centro' , '111.111.111-11');
+
+INSERT INTO USUARIO VALUES ('Henrique' , 'RJ - R. Equador, 40 - Centro', '334.352.283-23',);
+
+INSERT INTO USUARIO VALUES ('Felipe' , 'RJ - R. Equador, 1 - Centro' , '111.111.111-11');
+
+INSERT INTO USUARIO VALUES ('Henrique' , 'RJ - R. Equador, 40 - Centro', '334.352.283-23',);
+
+INSERT INTO USUARIO VALUES ('Felipe' , 'RJ - R. Equador, 1 - Centro' , '111.111.111-11');
+
+INSERT INTO USUARIO VALUES ('Henrique' , 'RJ - R. Equador, 40 - Centro', '334.352.283-23',);
+
+INSERT INTO USUARIO VALUES ('Felipe' , 'RJ - R. Equador, 1 - Centro' , '111.211.111-11');
+
+select  
+    "NOME", 
+    "ENDEREÇO", 
+    "CPF" 
+from "USUARIO";
+
+INSERT ALL 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12), 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12), 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12), 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12), 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12), 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12),;
+
+INSERT ALL 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12), 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12), 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12), 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12), 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12), 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12),;
+
+INSERT ALL 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12'), 
+    INTO USUARIO VALUES ('Bernardo','RJ - R.Equador Nº4','111.111.111-13'), 
+    INTO USUARIO VALUES ('Alan','RJ - R.Equador Nº5','111.111.111-14'), 
+    INTO USUARIO VALUES ('Daniel','RJ - R.Equador Nº6','111.111.111-15'), 
+    INTO USUARIO VALUES ('Henrique','RJ - R.Equador Nº7','111.111.111-16'), 
+    INTO USUARIO VALUES ('João Gabriel','RJ - R.Equador Nº8','111.111.111-17'),;
+
+INSERT ALL 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12'), 
+    INTO USUARIO VALUES ('Bernardo','RJ - R.Equador Nº4','111.111.111-13'), 
+    INTO USUARIO VALUES ('Alan','RJ - R.Equador Nº5','111.111.111-14'), 
+    INTO USUARIO VALUES ('Daniel','RJ - R.Equador Nº6','111.111.111-15'), 
+    INTO USUARIO VALUES ('Henrique','RJ - R.Equador Nº7','111.111.111-16'), 
+    INTO USUARIO VALUES ('João Gabriel','RJ - R.Equador Nº8','111.111.111-17'),;
+
+INSERT ALL 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12'), 
+    INTO USUARIO VALUES ('Bernardo','RJ - R.Equador Nº4','111.111.111-13'), 
+    INTO USUARIO VALUES ('Alan','RJ - R.Equador Nº5','111.111.111-14'), 
+    INTO USUARIO VALUES ('Daniel','RJ - R.Equador Nº6','111.111.111-15'), 
+    INTO USUARIO VALUES ('Henrique','RJ - R.Equador Nº7','111.111.111-16'), 
+    INTO USUARIO VALUES ('João Gabriel','RJ - R.Equador Nº8','111.111.111-17'), 
+    Select 1 from dual ;
+
+INSERT ALL 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12'), 
+    INTO USUARIO VALUES ('Bernardo','RJ - R.Equador Nº4','111.111.111-13'), 
+    INTO USUARIO VALUES ('Alan','RJ - R.Equador Nº5','111.111.111-14'), 
+    INTO USUARIO VALUES ('Daniel','RJ - R.Equador Nº6','111.111.111-15'), 
+    INTO USUARIO VALUES ('Henrique','RJ - R.Equador Nº7','111.111.111-16'), 
+    INTO USUARIO VALUES ('João Gabriel','RJ - R.Equador Nº8','111.111.111-17'), 
+    Select 7 from dual ;
+
+INSERT ALL 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12'), 
+    INTO USUARIO VALUES ('Bernardo','RJ - R.Equador Nº4','111.111.111-13'), 
+    INTO USUARIO VALUES ('Alan','RJ - R.Equador Nº5','111.111.111-14'), 
+    INTO USUARIO VALUES ('Daniel','RJ - R.Equador Nº6','111.111.111-15'), 
+    INTO USUARIO VALUES ('Henrique','RJ - R.Equador Nº7','111.111.111-16'), 
+    INTO USUARIO VALUES ('João Gabriel','RJ - R.Equador Nº8','111.111.111-17'), ;
+
+INSERT ALL 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12'), 
+    INTO USUARIO VALUES ('Bernardo','RJ - R.Equador Nº4','111.111.111-13'), 
+    INTO USUARIO VALUES ('Alan','RJ - R.Equador Nº5','111.111.111-14'), 
+    INTO USUARIO VALUES ('Daniel','RJ - R.Equador Nº6','111.111.111-15'), 
+    INTO USUARIO VALUES ('Henrique','RJ - R.Equador Nº7','111.111.111-16'), 
+    INTO USUARIO VALUES ('João Gabriel','RJ - R.Equador Nº8','111.111.111-17'), ;
+
+INSERT ALL 
+    INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12'), 
+    INTO USUARIO VALUES ('Bernardo','RJ - R.Equador Nº4','111.111.111-13'), 
+    INTO USUARIO VALUES ('Alan','RJ - R.Equador Nº5','111.111.111-14'), 
+    INTO USUARIO VALUES ('Daniel','RJ - R.Equador Nº6','111.111.111-15'), 
+    INTO USUARIO VALUES ('Henrique','RJ - R.Equador Nº7','111.111.111-16'), 
+    INTO USUARIO VALUES ('João Gabriel','RJ - R.Equador Nº8','111.111.111-17'), 
+ 
+select ;
+
+INSERT INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12'), ;
+
+INSERT INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12'), ;
+
+INSERT INTO USUARIO VALUES ('Flavio','RJ - R.Equador Nº3','111.111.111-12');
+
+INSERT INTO USUARIO VALUES ('Bernardo','RJ - R.Equador Nº4','111.111.111-13');
+
+INSERT INTO USUARIO VALUES ('Alan','RJ - R.Equador Nº5','111.111.111-14');
+
+INSERT INTO USUARIO VALUES ('Daniel','RJ - R.Equador Nº6','111.111.111-15');
+
+INSERT INTO USUARIO VALUES ('Henrique','RJ - R.Equador Nº7','111.111.111-16');
+
+INSERT INTO USUARIO VALUES ('João Gabriel','RJ - R.Equador Nº8','111.111.111-17');
+
+INSERT INTO USUARIO VALUES ('Ana','RJ - R.Equador Nº9','111.111.111-18');
+
+INSERT INTO USUARIO VALUES ('Joana','RJ - R.Equador Nº10','111.111.111-19');
+
+INSERT INTO USUARIO VALUES ('Gabriel','RJ - R.Equador Nº11','111.111.111-20');
+
+INSERT INTO USUARIO VALUES ('Gabriela','RJ - R.Equador Nº12','111.111.111-21');
+
+INSERT INTO USUARIO VALUES ('Fernando','RJ - R.Equador Nº13','111.111.111-22');
+
+INSERT INTO USUARIO VALUES ('Matheus','RJ - R.Equador Nº15','111.111.111-24');
+
+INSERT INTO USUARIO VALUES ('Viniccius','RJ - R.Equador Nº16','111.111.111-25');
+
+INSERT INTO USUARIO VALUES ('Davi','RJ - R.Equador Nº17','111.111.111-26');
+
+INSERT INTO USUARIO VALUES ('Udyr','RJ - R.Uga Nº18','111.111.111-27');
+
+INSERT INTO USUARIO VALUES ('Rafael','RJ - R.Equador Nº19','111.111.111-28');
+
+INSERT INTO USUARIO VALUES ('Otávio','RJ - R.Equador Nº20','111.111.111-29');
+
+INSERT INTO USUARIO VALUES ('Flavia','RJ - R.Equador Nº21','111.111.111-30');
+
+INSERT INTO USUARIO VALUES ('Júlia','RJ - R.Equador Nº22','111.111.111-31');
+
+INSERT INTO USUARIO VALUES ('Diana','RJ - R.Equador Nº23','111.111.111-32');
+
+INSERT INTO USUARIO VALUES ('Zoe','RJ - R.Equador Nº24','111.111.111-33');
+
+INSERT INTO USUARIO VALUES ('Murilo','RJ - R.Equador Nº25','222.222.222-34');
+
+INSERT INTO USUARIO VALUES ('Nelson','RJ - R.Equador Nº26','111.111.111-35');
+
+INSERT INTO USUARIO VALUES ('Alice','RJ - R.Equador Nº27','111.111.111-36');
+
+INSERT INTO USUARIO VALUES ('Karol','RJ - R.Equador Nº28','111.111.111-37');
+
+select  
+    "NOME", 
+    "ENDEREÇO", 
+    "CPF" 
+from "USUARIO";
+
+INSERT INTO USUARIO VALUES ('Andressa','RJ - R.Equador Nº29','111.111.111-38');
+
+INSERT INTO USUARIO VALUES ('Judite','RJ - R.Equador Nº30','111.111.111-39');
+
+select  
+    "NOME", 
+    "ENDEREÇO", 
+    "CPF" 
+from "USUARIO";
+
+INSERT into HOSPEDAGEM VALUE ('Resort', '111b111a11', 'Hawaii', '111.111.111-11'),;
+
+INSERT into HOSPEDAGEM VALUE ('Resort', '111b111a11', 'Hawaii', '111.111.111-11'), 
+Select;
+
+INSERT into HOSPEDAGEM VALUE ('Resort', '111b111a11', 'Hawaii', '111.111.111-11') 
+Select;
+
+INSERT into HOSPEDAGEM VALUE ('Resort', '111b111a11', 'Hawaii', '111.111.111-11');
+
+Select;
+
+INSERT into HOSPEDAGEM VALUE ('Resort', '111b111a11', 'Hawaii', '111.111.111-11');
+
+INSERT into HOSPEDAGEM VALUE ('Resort', '111b111a11', 'Hawaii', '111.111.111-11'), ;
+
+INSERT into HOSPEDAGEM VALUES ('Resort', '111b111a11', 'Hawaii', '111.111.111-11'), ;
+
+INSERT into HOSPEDAGEM VALUES ('Resort', '111b111a11', 'Hawaii', '111.111.111-11');
+
+INSERT into HOSPEDAGEM VALUES ('Hotel', '611b121a11', 'São Paulo', '111.111.111-12');
+
+INSERT into HOSPEDAGEM VALUES ('Pousada', '612b521a11', 'Bahia', '111.111.111-13');
+
+INSERT into HOSPEDAGEM VALUES ('Pousada', '612b421a71', 'Zimbabue', '111.111.111-14');
+
+INSERT into HOSPEDAGEM VALUES ('Hotel', '6222221a71', 'Dubai', '111.111.111-15');
+
+INSERT into HOSPEDAGEM VALUES ('Hotel', '622233ba71', 'Orlando', '111.111.111-16');
+
+INSERT into HOSPEDAGEM VALUES ('Hotel', '12c233ba71', 'Ibes', '111.111.111-17');
+
+INSERT into HOSPEDAGEM VALUES ('Hotel', '12c2c3ca71', 'Bangladesh', '111.111.111-18');
+
+INSERT into HOSPEDAGEM VALUES ('Hotel', 'm23u53c7a7', 'Bangu', '111.111.111-19');
+
+INSERT into HOSPEDAGEM VALUES ('Hotel', '123453c7a7', 'Osaka', '111.111.111-20');
+
+INSERT into HOSPEDAGEM VALUES ('Hotel', '157157c7a7', 'Osasco', '111.111.111-21');
+
+select  
+    "TIPO", 
+    "RESERVA", 
+    "HOPEDAGEM", 
+    "CPF_USUARIO" 
+from "HOSPEDAGEM";
+
+INSERT into HOSPEDAGEM VALUES ('Pousada', '15c15ba7a7', 'Vitoria', '111.111.111-20');
+
+INSERT into HOSPEDAGEM VALUES ('Pousada', 'a4515ba7a7', 'Rocinha', '111.111.111-22');
+
+INSERT into HOSPEDAGEM VALUES ('Pousada', 'a4515bnm37', 'Boa Vista', '111.111.111-23');
+
+INSERT into HOSPEDAGEM VALUES ('Pousada', 'a4515bnm37', 'Boa_Vista', '111.111.111-23');
+
+INSERT into HOSPEDAGEM VALUES ('Pousada', 'a4515bnm37', 'Boa Vista', '111.111.111-24');
+
+INSERT into HOSPEDAGEM VALUES ('Pousada', 'a4515bbb37', 'Everest', '111.111.111-25');
+
+INSERT into HOSPEDAGEM VALUES ('Pousada', 'a2515bbbb37', 'Castelo', '111.111.111-26');
+
+INSERT into HOSPEDAGEM VALUES ('Pousada', 'a2515bbbb37', 'Castelo', '111.111.111-27');
+
+INSERT into HOSPEDAGEM VALUES ('Pousada', 'a215bbbb37', 'Castelo', '111.111.111-27');
+
+INSERT into HOSPEDAGEM VALUES ('Pousada', 'a215bccc37', 'Paris', '111.111.111-27');
+
+INSERT into HOSPEDAGEM VALUES ('Resort', 'a215z5c937', 'Londres', '111.111.111-28');
+
+INSERT into HOSPEDAGEM VALUES ('Resort', 'a2c5b5c937', 'Curitiba', '111.111.111-29');
+
+INSERT into HOSPEDAGEM VALUES ('Resort', 'a2c5b5cbx7', 'Brasilia', '111.111.111-30');
+
+INSERT into HOSPEDAGEM VALUES ('Resort', 'a2xxb5cbx7', 'Ionia', '111.111.111-30');
+
+INSERT into HOSPEDAGEM VALUES ('Resort', '12zxb5czx7', 'Bosnia', '111.111.111-31');
+
+INSERT into HOSPEDAGEM VALUES ('Resort', '12zvb5vzx7', 'Freljord', '111.111.111-31');
+
+INSERT into HOSPEDAGEM VALUES ('Resort', '12zvccvzx7', 'Vila Velha', '111.111.111-32');
+
+INSERT into HOSPEDAGEM VALUES ('Resort', '12666cvzx7', 'Noxus', '111.111.111-32');
+
+INSERT into HOSPEDAGEM VALUES ('Resort', '12666c77x7', 'Orgrimmar', '111.111.111-32');
+
+INSERT into HOSPEDAGEM VALUES ('Resort', '126xfg77x7', 'Nova Iorque', '111.111.111-33');
+
+select  
+    "TIPO", 
+    "RESERVA", 
+    "HOPEDAGEM", 
+    "CPF_USUARIO" 
+from "HOSPEDAGEM";
+
+INSERT into HOSPEDAGEM VALUES ('Resort', '126xfgcsf7', 'Jerusalem', '111.111.111-35');
+
+INSERT into HOSPEDAGEM VALUES ('Resort', '126vfhusf7', 'Coreia do Norte', '111.111.111-37');
+
+INSERT into HOSPEDAGEM VALUES ('Resort', '1b6aftman7', 'Gotham City', '324.236.243-23');
+
+INSERT into PASSAGEM VALUES ('300', 'RJ', '1112000354', '111.111.111-11');
+
+INSERT into PASSAGEM VALUES ('350', 'SP', '1112000699', '111.111.111-12');
+
+INSERT into PASSAGEM VALUES ('322', 'ES', '1112000884', '111.111.111-13');
+
+INSERT into PASSAGEM VALUES ('336', 'BA', '1112005563', '111.111.111-14');
+
+INSERT into PASSAGEM VALUES ('530', 'AC', '1112099866', '111.111.111-15');
+
+INSERT into PASSAGEM VALUES ('522', 'PR', '1112098969', '111.111.111-16');
+
+INSERT into PASSAGEM VALUES ('522', 'SC', '1112097894', '111.111.111-17');
+
+INSERT into PASSAGEM VALUES ('522', 'RS', '1112045623', '111.111.111-18');
+
+INSERT into PASSAGEM VALUES ('633', 'MS', '1142545623', '111.111.111-19');
+
+select  
+    "PREÇO", 
+    "DESTINO", 
+    "RESERVA", 
+    "CPF_USUARIO" 
+from "PASSAGEM";
+
+INSERT into PASSAGEM VALUES ('615', 'SE', '1142545123', '111.111.111-20');
+
+INSERT into PASSAGEM VALUES ('1000', 'NY', '1142545542', '111.111.111-21');
+
+INSERT into PASSAGEM VALUES ('1420', 'DT', '1142545852', '111.111.111-22');
+
+INSERT into PASSAGEM VALUES ('1450', 'TE', '11452165852', '111.111.111-23');
+
+INSERT into PASSAGEM VALUES ('1450', 'TE', '1145216582', '111.111.111-23');
+
+INSERT into PASSAGEM VALUES ('1450', 'CA', '1145216582', '111.111.111-24');
+
+select  
+    "PREÇO", 
+    "DESTINO", 
+    "RESERVA", 
+    "CPF_USUARIO" 
+from "PASSAGEM";
+
+INSERT into PASSAGEM VALUES ('1450', 'CA', '1145216582', '111.111.111-24');
+
+INSERT into PASSAGEM VALUES ('1493', 'CA', '1145245582', '111.111.111-25');
+
+INSERT into PASSAGEM VALUES ('1420', 'TE', '1145245579', '111.111.111-26');
+
+INSERT into PASSAGEM VALUES ('1475', 'FL', '1145245486', '111.111.111-27');
+
+INSERT into PASSAGEM VALUES ('1566', 'SF', '1149225486', '111.111.111-28');
+
+INSERT into PASSAGEM VALUES ('650', 'RO', '2249225486', '111.111.111-29');
+
+INSERT into PASSAGEM VALUES ('420', 'PI', '2249225486', '111.111.111-30');
+
+INSERT into PASSAGEM VALUES ('420', 'PI', '2249225486', '111.111.111-31');
+
+INSERT into PASSAGEM VALUES ('420', 'PI', '2249225486', '111.111.111-32');
+
+INSERT into PASSAGEM VALUES ('420', 'PI', '2249225486', '111.111.111-33');
+
+INSERT into PASSAGEM VALUES ('420', 'PI', '2249225486', '111.111.111-35');
+
+INSERT into PASSAGEM VALUES ('450', 'PI', '2249225486', '111.111.111-35');
+
+INSERT into PASSAGEM VALUES ('450', 'PI', '1249225486', '111.111.111-35');
+
+INSERT into PASSAGEM VALUES ('420', 'AP', '1239225486', '111.111.111-31');
+
+INSERT into PASSAGEM VALUES ('426', 'MA', '1239225486', '111.111.111-32');
+
+INSERT into PASSAGEM VALUES ('425', 'MA', '1139225486', '111.111.111-32');
+
+INSERT into PASSAGEM VALUES ('455', 'CE', '1139225486', '111.111.111-33');
+
+INSERT into PASSAGEM VALUES ('455', 'CE', '1149225486', '111.111.111-33');
+
+INSERT into PASSAGEM VALUES ('455', 'CE', '1150225486', '111.111.111-33');
+
+select  
+    "PREÇO", 
+    "DESTINO", 
+    "RESERVA", 
+    "CPF_USUARIO" 
+from "PASSAGEM";
+
+INSERT into PASSAGEM VALUES ('460', 'RN', '1150555486', '111.111.111-36');
+
+INSERT into PASSAGEM VALUES ('480', 'PB', '1150555486', '111.111.111-37');
+
+INSERT into PASSAGEM VALUES ('480', 'PB', '1150655486', '111.111.111-37');
+
+INSERT into PASSAGEM VALUES ('480', 'AL', '1150655475', '111.111.111-38');
+
+INSERT into PASSAGEM VALUES ('490', 'SE', '1150655475', '111.111.111-39');
+
+INSERT into PASSAGEM VALUES ('490', 'PA', '1150655475', '111.111.111-39');
+
+INSERT into PASSAGEM VALUES ('490', 'PA', '1150655495', '111.111.111-39');
+
+INSERT into PASSAGEM VALUES ('490', 'RR', '1150656495', '111.111.111-40');
+
+INSERT into PASSAGEM VALUES ('490', 'RR', '1150646495', '111.111.111-40');
+
+INSERT into PASSAGEM VALUES ('490', 'RR', '1150646495', '111.111.111-45');
+
+INSERT into PASSAGEM VALUES ('490', 'RR', '1150646495', '324.236.243-23');
+
+select  
+    "PREÇO", 
+    "DESTINO", 
+    "RESERVA", 
+    "CPF_USUARIO" 
+from "PASSAGEM";
+
+INSERT into PASSAGEM VALUES ('390', 'TO', '1150646953', '324.236.243-25');
+
+INSERT into PASSAGEM VALUES ('390', 'TO', '1150646753', '324.236.243-25');
+
+INSERT into PASSAGEM VALUES ('390', 'TO', '1150646753', '324.236.243-26');
+
+INSERT into PASSAGEM VALUES ('390', 'TO', '1150646753', '324.236.243-39');
+
+INSERT into PASSAGEM VALUES ('390', 'TO', '1150646753', '324.236.243-53');
+
+INSERT into PASSAGEM VALUES ('390', 'TO', '1150646753', '324.236.243-42');
+
+INSERT into PASSAGEM VALUES ('390', 'TO', '1155206753', '324.236.243-42');
+
+INSERT into PASSAGEM VALUES ('390', 'TO', '1155206753', '111.211.111-11');
+
+INSERT into PASSAGEM VALUES ('390', 'TO', '1155206513', '222.222.222-34');
+
+select  
+    "PREÇO", 
+    "DESTINO", 
+    "RESERVA", 
+    "CPF_USUARIO" 
+from "PASSAGEM";
+
+select  
+    
+    "CPF_USUARIO" 
+from "PASSAGEM";
+
+INSERT into PASSAGEM VALUES ('420', 'AC', '1155206560', '111.111.111-30');
+
+INSERT into values ('250', '12/12/2012', '1111111111', '111.111.111-11'), ;
+
+INSERT into PACOTE values ('250', '12/12/2012', '1111111111', '111.111.111-11'), ;
+
+INSERT into PACOTE values ('250', '12/12/2012', '1111111111', '111.111.111-11');
+
+INSERT into PACOTE VALUES ('250', '12/12/2012', '1111111111', '111.111.111-11');
+
+INSERT into PACOTE values ('250', '1212/12', '1111111111', '111.111.111-11');
+
+INSERT into PACOTE values ('250', '121212', '1111111111', '111.111.111-11');
+
+INSERT into PACOTE values ('250', '12-DEC-2012', '1111111111', '111.111.111-11');
+
+INSERT into PACOTE values ('350', '06-JUN-2006', '1111111112', '111.111.111-12');
+
+INSERT into PACOTE values ('150', '05-MAR-2005', '1111111113', '111.111.111-13');
+
+INSERT into PACOTE values ('300', '04-APR-2004', '1111111114', '111.111.111-14');
+
+INSERT into PACOTE values ('200', '03-MAI-2003', '1111111113', '111.111.111-13');
+
+INSERT into PACOTE values ('200', '03-MAI-2003', '1111111113', '111.111.111-13');
+
+select  
+    "PREÇO", 
+    "DATA", 
+    "ID", 
+    "CPF_USUARIO" 
+from "PACOTE";
+
+INSERT into PACOTE values ('400', '03-MAI-2003', '1111111115', '111.111.111-15');
+
+INSERT into PACOTE values ('400', '03-MAY-2003', '1111111115', '111.111.111-15');
+
+INSERT into PACOTE values ('200', '02-FEB-2002', '1111111112', '111.111.111-12');
+
+INSERT into PACOTE values ('200', '02-FEB-2002', '1111111116', '111.111.111-16');
+
+INSERT into PACOTE values ('100', '01-JAN-2001', '1111111117', '111.111.111-17');
+
+INSERT into PACOTE values ('500', '07-SET-2007', '1111111118', '111.111.111-18');
+
+INSERT into PACOTE values ('500', '07-SEP-2007', '1111111118', '111.111.111-18');
+
+INSERT into PACOTE values ('550', '08-NOV-2008', '1111111119', '111.111.111-19');
+
+INSERT into PACOTE values ('600', '09-OCT-2009', '1111111120', '111.111.111-20');
+
+INSERT into PACOTE values ('650', '10-AUG-2010', '1111111121', '111.111.111-21');
+
+INSERT into PACOTE values ('700', '11-JUL-2011', '1111111122', '111.111.111-22');
+
+select  
+    "PREÇO", 
+    "DATA", 
+    "ID", 
+    "CPF_USUARIO" 
+from "PACOTE";
+
+INSERT into PACOTES values ('750', '02-JAN-2020', '1111111123', '111.111.111-24');
+
+INSERT into PACOTE values ('750', '02-JAN-2020', '1111111123', '111.111.111-24');
+
+INSERT into PACOTE values ('800', '02-FEB-2020', '1111111124', '111.111.111-25');
+
+INSERT into PACOTE values ('850', '02-MAR-2020', '1111111125', '111.111.111-26');
+
+INSERT into PACOTE values ('900', '02-APR-2020', '1111111126', '111.111.111-27');
+
+INSERT into PACOTE values ('950', '02-MAI-2020', '1111111127', '111.111.111-28');
+
+INSERT into PACOTE values ('950', '02-MAY-2020', '1111111127', '111.111.111-28');
+
+INSERT into PACOTE values ('1000', '02-JUN-2020', '1111111128', '111.111.111-29');
+
+INSERT into PACOTE values ('1050', '02-JUL-2020', '1111111129', '111.111.111-30');
+
+INSERT into PACOTE values ('1100', '02-AUG-2020', '1111111130', '111.111.111-31');
+
+INSERT into PACOTE values ('1150', '02-SEP-2020', '1111111131', '111.111.111-32');
+
+INSERT into PACOTE values ('1200', '02-OCT-2020', '1111111132', '111.111.111-33');
+
+INSERT into PACOTE values ('1250', '02-NOV-2020', '1111111133', '111.111.111-34');
+
+INSERT into PACOTE values ('1250', '02-NOV-2020', '1111111133', '222.222.222-34');
+
+INSERT into PACOTE values ('1300', '02-DEC-2020', '1111111134', '111.111.111-35');
+
+INSERT into PACOTE values ('1350', '03-JAN-2020', '1111111135', '111.111.111-36');
+
+INSERT into PACOTE values ('1400', '03-FEV-2020', '1111111136', '111.111.111-37');
+
+INSERT into PACOTE values ('1400', '03-FEB-2020', '1111111136', '111.111.111-37');
+
+INSERT into PACOTE values ('1450', '03-MAR-2020', '1111111137', '111.111.111-38');
+
+INSERT into PACOTE values ('1500', '03-APR-2020', '1111111138', '111.111.111-39');
+
+INSERT into PACOTE values ('1550', '03-MAY-2020', '1111111139', '111.211.111-11');
+
+INSERT into PACOTE values ('1600', '03-JUN-2020', '1111111140', '324.236.243-23');
+
+select  
+    "PREÇO", 
+    "DATA", 
+    "ID", 
+    "CPF_USUARIO" 
+from "PACOTE";
+
