@@ -4,7 +4,7 @@ Pacote
 Hospedagem(Hotel, Resort, Pousada)
 Passagem
 Atributos das entidades:
-Usuário: Nome(obrigatório), CPF(obrigatório e único), Endereço (obrigatório).
+Usuário: Nome(obrigatório), CPF(obrigatório e único), Número, Rua, Cidade
 Pacote: ID (obrigatório), Data(obrigatório), Preço (obrigatório).
 Hospedagem: Endereço (obrigatório e unico), Estilo (obrigatório), Reserva(obrigatório e único).
 Passagem: Preço (obrigatório), Destino (obrigatório), Reserva(obrigatório e único).
@@ -25,7 +25,9 @@ Não foram necessárias chaves compostas
 
 Nome - VARCHAR2
 Cpf - NUMBER
-Endereço - VARCHAR2
+Número - Number
+Rua -   VARCHAR2
+Cidade - VARCHAR2
 Preço - NUMBER
 Destino - VARCHAR2
 Estilo - VARCHAR2
