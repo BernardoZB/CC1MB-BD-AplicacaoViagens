@@ -6,7 +6,7 @@ Passagem
 Atributos das entidades:
 Usuário: Nome(obrigatório), CPF(obrigatório e único), Número, Rua, Cidade
 Pacote: ID (obrigatório), Data(obrigatório), Preço (obrigatório).
-Hospedagem: Endereço (obrigatório e unico), Estilo (obrigatório), Reserva(obrigatório e único).
+Hospedagem: Local, Estilo (obrigatório), Reserva(obrigatório e único).
 Passagem: Preço (obrigatório), Destino (obrigatório), Reserva(obrigatório e único).
 
 Atributos unicos: ID, CPF e Reserva, Endereço
@@ -34,6 +34,7 @@ Estilo - VARCHAR2
 Reserva - VARCHAR2
 ID - NUMBER
 Data - DATE
+Local - Varchar2
 
 
 OBS: Como é a primeira vez utilizando essa plataforma, sem querer coloqueis todos os arquivos em issues peço perdão enviarei todos corretamente agr
