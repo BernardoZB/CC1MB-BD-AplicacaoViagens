@@ -8,7 +8,7 @@ Atributos das entidades:
 
 Usuário: Nome(obrigatório), CPF(obrigatório e único), Número, Rua, Cidade
 Pacote: ID (obrigatório), Data(obrigatório), Preço (obrigatório).
-Hospedagem: Local, Estilo (obrigatório), Reserva(obrigatório e único).
+Hospedagem: Local, Tipo (obrigatório), Reserva(obrigatório e único).
 Passagem: Preço (obrigatório), Destino (obrigatório), Reserva(obrigatório e único).
 
 Atributos unicos: ID, CPF e Reserva, Endereço
@@ -32,7 +32,7 @@ Rua -   VARCHAR2
 Cidade - VARCHAR2
 Preço - NUMBER
 Destino - VARCHAR2
-Estilo - VARCHAR2
+Tipo - VARCHAR2
 Reserva - VARCHAR2
 ID - NUMBER
 Data - DATE
