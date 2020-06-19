@@ -1,5 +1,11 @@
+REM   Script: Banco de dados
+REM   aaaa
+
 REM   Script: Banco de Dados
+
+
 REM   Projeto integrado Banco de Dados
+
 
 REM   Script: GREWYQQ
 
@@ -768,4 +774,385 @@ select
     "ID", 
     "CPF_USUARIO" 
 from "PACOTE";
+
+select  
+    "TIPO", 
+    "RESERVA", 
+    "HOPEDAGEM", 
+    "CPF_USUARIO" 
+from "HOSPEDAGEM";
+
+select  
+    "NOME", 
+    "ENDEREÇO", 
+    "CPF" 
+from "USUARIO";
+
+Alter table Usuario Drop (endereço);
+
+select  
+    "NOME", 
+    "ENDEREÇO", 
+    "CPF" 
+from "USUARIO";
+
+Alter table Usuario add(Cidade Varchar2(32) , Rua Varchar2(32) , Numero Number (3) ) ;
+
+Alter table Usuario drop(Cidade  , Rua  , Numero ) ;
+
+Alter table Usuario add(Cidade Varchar2(32)not null , Rua Varchar2(32) not null , Numero Number (3) not null ) ;
+
+Alter table Usuario add(Cidade Varchar2(32) , Rua Varchar2(32) , Numero Number (3) ) ;
+
+INSERT ALL  
+    INTO Cidade FROM Usuario VALUES (RJ) 
+select ;
+
+INSERT ALL  
+    INTO Cidade FROM Usuario VALUES (RJ), 
+select ;
+
+INSERT  INTO Cidade FROM Usuario VALUES (RJ), 
+;
+
+INSERT  INTO Cidade FROM Usuario VALUES (RJ) 
+;
+
+INSERT  INTO Cidade FROM Usuario VALUES ('RJ') 
+;
+
+INSERT  INTO Cidade FROM Usuario VALUES ('RJ'), 
+;
+
+INSERT  INTO Cidade FROM Usuario VALUES ('RJ');
+
+INSERT  INTO Cidade FROM Usuario VALUE ('RJ');
+
+INSERT INTO Cidade FROM Usuario VALUE ('RJ') 
+;
+
+select  
+    "NOME", 
+    "CPF", 
+    "CIDADE", 
+    "RUA", 
+    "NUMERO" 
+from "USUARIO";
+
+UPDATE usuario SET cidade = 'RJ', Rua = 'R.Bromélias', Número = '1' WHERE id=1;
+
+UPDATE usuario SET cidade = 'RJ', Rua = 'R.Bromélias', Numero = '1' WHERE id=1;
+
+UPDATE USUARIO SET CIDADE = 'RJ', RUA = 'R.Bromélias', NUMERO = '1' WHERE id=1;
+
+UPDATE USUARIO SET CIDADE = 'RJ', RUA = 'R.Bromélias', NUMERO = '1' WHERE ID = 1;
+
+UPDATE USUARIO SET CIDADE = RJ , RUA = R.Bromélias , NUMERO = 1 WHERE ID = 1;
+
+UPDATE USUARIO SET CIDADE = RJ , RUA = R.Bromélias , NUMERO = 1 WHERE ID = 2;
+
+UPDATE USUARIO SET CIDADE = RJ , RUA = R.Bromélias , NUMERO = 1 WHERE NOME = Danyel;
+
+UPDATE USUARIO SET CIDADE = 'RJ' , RUA = 'R.Bromélias' , NUMERO = '1' WHERE NOME = 'Danyel';
+
+select  
+    "NOME", 
+    "CPF", 
+    "CIDADE", 
+    "RUA", 
+    "NUMERO" 
+from "USUARIO";
+
+UPDATE USUARIO SET CIDADE = 'ES' , RUA = 'R.João Pessoa' , NUMERO = '2'  WHERE CPF = '111.111.111-11';
+
+UPDATE USUARIO SET CIDADE = 'Vila Velha' WHERE CPF = '111.111.111-11';
+
+select  
+    "NOME", 
+    "CPF", 
+    "CIDADE", 
+    "RUA", 
+    "NUMERO" 
+from "USUARIO";
+
+UPDATE USUARIO SET CIDADE = 'Rio Branco' , RUA = 'R.Capixaba' , NUMERO = '3'  WHERE CPF = '111.211.111-11';
+
+UPDATE USUARIO SET CIDADE = 'Brasília' , RUA = 'R.Delsinho' , NUMERO = '4'  WHERE NOME = 'Flavio';
+
+UPDATE USUARIO SET CIDADE = 'São Paulo' , RUA = 'R.Zoe' , NUMERO = '6'  WHERE NOME = 'Bernardo';
+
+UPDATE USUARIO SET CIDADE = 'Santos' , RUA = 'R.Alibaba' , NUMERO = '7'  WHERE NOME = 'Alan';
+
+UPDATE USUARIO SET CIDADE = 'Castelo' , RUA = 'R.Coronel' , NUMERO = '8'  WHERE NOME = 'Daniel';
+
+UPDATE USUARIO SET CIDADE = 'Nova Iorque' , RUA = 'R.Valorant' , NUMERO = '9'  WHERE NOME = 'Henrique';
+
+UPDATE USUARIO SET CIDADE = 'Vitoria' , RUA = 'R.Offline' , NUMERO = '10'  WHERE NOME = 'João Gabriel';
+
+UPDATE USUARIO SET CIDADE = 'Manaus' , RUA = 'R.Banana' , NUMERO = '11'  WHERE NOME = 'Ana';
+
+UPDATE USUARIO SET CIDADE = 'Ouro Preto' , RUA = 'R.Dark' , NUMERO = '12'  WHERE NOME = 'Joana';
+
+UPDATE USUARIO SET CIDADE = 'Curitiba' , RUA = 'R.Monteiro Lobato' , NUMERO = '13'  WHERE NOME = 'Gabriel';
+
+UPDATE USUARIO SET CIDADE = 'Belo Horizonte' , RUA = 'R.Aristoteles' , NUMERO = '14'  WHERE NOME = 'Gabriela';
+
+UPDATE USUARIO SET CIDADE = 'Recife' , RUA = 'R.Machado de Assís' , NUMERO = '15'  WHERE NOME = 'Fernando';
+
+UPDATE USUARIO SET CIDADE = 'Fortaleza' , RUA = 'R.Augusto Liberato' , NUMERO = '16'  WHERE NOME = 'Matheus';
+
+UPDATE USUARIO SET CIDADE = 'Jundiaí' , RUA = 'R.Mel Gibson' , NUMERO = '17'  WHERE NOME = 'Viniccius';
+
+UPDATE USUARIO SET CIDADE = 'Natal' , RUA = 'R.Clarice Lispector' , NUMERO = '18'  WHERE NOME = 'Davi';
+
+select  
+    "NOME", 
+    "CPF", 
+    "CIDADE", 
+    "RUA", 
+    "NUMERO" 
+from "USUARIO";
+
+UPDATE USUARIO SET CIDADE = 'Alagoinha' , RUA = 'R.UgaBuga' , NUMERO = '19'  WHERE NOME = 'Udyr';
+
+UPDATE USUARIO SET CIDADE = 'São Carlos' , RUA = 'R.Jorge Amado' , NUMERO = '20'  WHERE NOME = 'Rafael';
+
+UPDATE USUARIO SET CIDADE = 'Niterói' , RUA = 'R.Mesquíta' , NUMERO = '21'  WHERE NOME = 'Otávio';
+
+UPDATE USUARIO SET CIDADE = 'Salvador' , RUA = 'R.Erison' , NUMERO = '22'  WHERE NOME = 'Flavia';
+
+UPDATE USUARIO SET CIDADE = 'Palmas' , RUA = 'R.Carlos Drummond' , NUMERO = '23'  WHERE NOME = 'Júlia';
+
+UPDATE USUARIO SET CIDADE = 'Maringá' , RUA = 'R.Lua' , NUMERO = '24'  WHERE NOME = 'Diana';
+
+UPDATE USUARIO SET CIDADE = 'Monte Claros' , RUA = 'R.Estrelinha' , NUMERO = '25'  WHERE NOME = 'Zoe';
+
+UPDATE USUARIO SET CIDADE = 'Petrolinia' , RUA = 'R.Vice' , NUMERO = '26'  WHERE NOME = 'Murilo';
+
+UPDATE USUARIO SET CIDADE = 'São Luís' , RUA = 'R.Mandella' , NUMERO = '27'  WHERE NOME = 'Nelson';
+
+select  
+    "NOME", 
+    "CPF", 
+    "CIDADE", 
+    "RUA", 
+    "NUMERO" 
+from "USUARIO";
+
+UPDATE USUARIO SET CIDADE = 'Araraquara' , RUA = 'R.Maravilha' , NUMERO = '5'  WHERE NOME = 'Alice';
+
+UPDATE USUARIO SET CIDADE = 'Macapá' , RUA = 'R.Carol' , NUMERO = '28'  WHERE NOME = 'Karol';
+
+UPDATE USUARIO SET CIDADE = 'Uberlândia' , RUA = 'R.Tiradentes' , NUMERO = '29'  WHERE NOME = 'Andressa';
+
+UPDATE USUARIO SET CIDADE = 'Olinda' , RUA = 'R.Getúlio Vargas' , NUMERO = '30'  WHERE NOME = 'Judite';
+
+select  
+    "NOME", 
+    "CPF", 
+    "CIDADE", 
+    "RUA", 
+    "NUMERO" 
+from "USUARIO";
+
+select nome, Cpf, Cidade From Usuario;
+
+select Nome, Cpf, Cidade From Usuario;
+
+Select tipo from hospedagem where tipo = 'hotel';
+
+select  
+    "TIPO", 
+    "RESERVA", 
+    "HOPEDAGEM", 
+    "CPF_USUARIO" 
+from "HOSPEDAGEM";
+
+select Hopedagem as local from Hospedagem;
+
+Alter table Hospedagem rename column Hopedagem to Hospedagem;
+
+select Nome, Cpf, Cidade From Usuario;
+
+Select tipo from hospedagem where tipo = 'hotel';
+
+select Nome, Cpf, Cidade From Usuario;
+
+Select tipo from hospedagem where tipo = hotel;
+
+Select tipo from hospedagem where tipo = 'hotel';
+
+select  
+    "TIPO", 
+    "RESERVA", 
+    "HOSPEDAGEM", 
+    "CPF_USUARIO" 
+from "HOSPEDAGEM";
+
+Select Tipo from Hospedagem where tipo = 'resort';
+
+Select from Hospedagem where tipo = 'resort';
+
+Select Hospedagem where tipo = 'resort';
+
+Select CPf_usuario from Hospedagem where tipo = 'resort';
+
+Select CPf_usuario from Hospedagem where tipo = 'resort';
+
+Select CPF_USUARIO from HOSPEDAGEM where TIPO = 'RESORT';
+
+Select * from HOSPEDAGEM where TIPO = 'RESORT';
+
+Select CPF_USUARIO, RESERVA from HOSPEDAGEM where TIPO = 'RESORT';
+
+Select CPF_USUARIO, RESERVA from HOSPEDAGEM  
+where TIPO = 'RESORT';
+
+select  
+    "PREÇO", 
+    "DESTINO", 
+    "RESERVA", 
+    "CPF_USUARIO" 
+from "PASSAGEM";
+
+(Select CPF_USUARIO, RESERVA  
+ 
+from HOSPEDAGEM  
+ 
+where TIPO = 'RESORT');
+
+Select CPF_USUARIO, RESERVA  
+ 
+from HOSPEDAGEM  
+ 
+where TIPO = 'RESORT';
+
+Select CPF_USUARIO, RESERVA  
+ 
+from Table HOSPEDAGEM  
+ 
+where TIPO = 'RESORT';
+
+Select CPF_USUARIO, RESERVA  
+ 
+from Table (HOSPEDAGEM)  
+ 
+where TIPO = 'RESORT';
+
+Select CPF_USUARIO, RESERVA  
+ 
+from Table ('HOSPEDAGEM')  
+ 
+where TIPO = 'RESORT';
+
+Select CPF_USUARIO, 
+ 
+from Table Passagem 
+ 
+where Destino = 'ES';
+
+Select CPF_USUARIO 
+ 
+from Table Passagem 
+ 
+where Destino = 'ES';
+
+Select CPF_USUARIO 
+ 
+from Passagem 
+ 
+where Destino = 'ES';
+
+Alter table Hospedagem rename column Hospedagem to Local;
+
+Select Cpf_usuario, reserva from hospedagem where Tipo = 'hotel';
+
+Select Cpf_usuario, reserva from hospedagem where Tipo = 'hotel';
+
+Select Cpf_usuario, reserva from hospedagem where Tipo = 'Hotel';
+
+Select Cpf_usuario, reserva, nome from hospedagem and usuario where Tipo = 'Hotel' and Cpf_usuario = Cpf;
+
+Select Cpf_usuario, reserva, nome from hospedagem and usuario where Tipo = 'Hotel' and Cpf_usuario = Cpf;
+
+Select Cpf_usuario, reserva, nome from hospedagem , usuario where Tipo = 'Hotel' and Cpf_usuario = Cpf;
+
+Select Cpf_usuario, reserva, nome , local from hospedagem , usuario where Tipo = 'Hotel' and Cpf_usuario = Cpf;
+
+select  
+    "PREÇO", 
+    "DESTINO", 
+    "RESERVA", 
+    "CPF_USUARIO" 
+from "PASSAGEM";
+
+select Nome, Local, ID, Preço from usuario, hospedagem, pacote, passagem where Cpf_usuario = CPF;
+
+select Nome, Local, ID, Preço from usuario, hospedagem, pacote, passagem;
+
+select Nome, Local, ID, Preço from usuario, hospedagem, pacote, passagem;
+
+select Nome, Local, ID, Preço, from usuario, hospedagem, pacote, passagem;
+
+select Nome, Local, ID, Preço, from usuario, hospedagem, pacote, passagem;
+
+select Nome, Local, ID, Preço from usuario, hospedagem, pacote, passagem;
+
+select Nome, Local, ID, Preço from usuario, hospedagem, pacote, passagem;
+
+select Nome, Local, IDfrom usuario, hospedagem, pacote, passagem;
+
+select Nome, Local, IDfrom usuario, hospedagem, pacote, passagem;
+
+select Nome, Local, ID from usuario, hospedagem, pacote, passagem;
+
+select Nome, Local, ID from usuario, hospedagem, pacote;
+
+select  
+    "PREÇO", 
+    "DATA", 
+    "ID", 
+    "CPF_USUARIO" 
+from "PACOTE";
+
+select Nome, Local from usuario, hospedagem;
+
+select nome from usuario 
+;
+
+select nome from usuario 
+ 
+select nome, reserva from usuario, hospedagem;
+
+select nome from usuario;
+
+select nome, reserva from usuario, hospedagem;
+
+select nome from usuario;
+
+select nome, id from usuario, hospedagem;
+
+select nome from usuario;
+
+select nome, id from usuario, pacote;
+
+select nome from usuario;
+
+select nome, id from usuario, pacote where Cpf_usuario = cpf;
+
+select nome, id, tipo from usuario, pacote, hospedagem where Cpf_usuario = cpf;
+
+select cpf_usurio as cpf_usuario_pacote from pacote ;
+
+select cpf_usuario as cpf_usuario_pacote from pacote ;
+
+select cpf_usuario as cpf_usuario_pacote from pacote and cpf_usuario as cpf_usuario_hospedagem from hospedagem;
+
+select cpf_usuario as cpf_usuario_pacote from pacote and cpf_usuario as cpf_usuario_hospedagem from hospedagem;
+
+select cpf_usuario as cpf_usuario_pacote from pacote and cpf_usuario as select cpf_usuario_hospedagem from hospedagem;
+
+select cpf_usuario as cpf_usuario_pacote from pacote and select cpf_usuario as cpf_usuario_hospedagem from hospedagem;
+
+select cpf_usuario as cpf_usuario_pacote, cpf_usuario as cpf_usuario_hospedagem from pacote, hospedagem;
 
